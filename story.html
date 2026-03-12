@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Our Story</title>
+
+<style>
+
+body{
+margin:0;
+font-family:'Segoe UI';
+background: linear-gradient(120deg,#9a0644,#f5e6da,#ad0f73);
+background-size:cover;
+overflow-x:hidden;
+position:relative;
+}
+
+/* HEARTS BACKGROUND */
+
+.heart{
+position:fixed;
+bottom:-50px;
+font-size:25px;
+color:darkred;
+animation: float 8s linear infinite;
+opacity:0.7;
+}
+
+@keyframes float{
+0%{
+transform:translateY(0) rotate(0deg);
+opacity:1;
+}
+100%{
+transform:translateY(-110vh) rotate(360deg);
+opacity:0;
+}
+}
+
+.heart:nth-child(1){left:5%; animation-duration:6s;}
+.heart:nth-child(2){left:15%; animation-duration:8s;}
+.heart:nth-child(3){left:25%; animation-duration:7s;}
+.heart:nth-child(4){left:35%; animation-duration:9s;}
+.heart:nth-child(5){left:50%; animation-duration:6s;}
+.heart:nth-child(6){left:65%; animation-duration:8s;}
+.heart:nth-child(7){left:75%; animation-duration:7s;}
+.heart:nth-child(8){left:85%; animation-duration:10s;}
+.heart:nth-child(9){left:95%; animation-duration:6s;}
+
+h1{
+text-align:center;
+color:brown;
+padding:30px;
+font-size:40px;
+letter-spacing:3px;
+}
+
+.timeline{
+position:relative;
+max-width:1200px;
+margin:auto;
+padding:40px 0;
+}
+
+.timeline::after{
+content:'';
+position:absolute;
+width:4px;
+background:white;
+top:0;
+bottom:0;
+left:50%;
+}
+
+.container{
+padding:20px 40px;
+position:relative;
+width:50%;
+}
+
+.left{
+left:0;
+}
+
+.right{
+left:50%;
+}
+
+.card{
+background:lightpink;
+border-radius:15px;
+box-shadow:0 10px 25px rgba(0,0,0,0.2);
+overflow:hidden;
+transition:0.4s;
+}
+
+.card:hover{
+transform:scale(1.05);
+}
+
+.card img{
+width:100%;
+height:auto;
+display:block;
+border-top-left-radius:15px;
+border-top-right-radius:15px;
+}
+
+.text{
+padding:20px;
+}
+
+.year{
+font-size:28px;
+font-weight:bold;
+color:brown;
+}
+
+.desc{
+color:brown;
+margin-top:10px;
+}
+
+.container::before{
+content:'';
+position:absolute;
+width:20px;
+height:20px;
+background:brown;
+border:4px solid #ff4d6d;
+border-radius:50%;
+top:30px;
+right:-10px;
+z-index:1;
+}
+
+.right::before{
+left:-10px;
+}
+
+button{
+background-color:#7a2f2f;
+color:white;
+padding:12px 25px;
+border:none;
+font-size:16px;
+border-radius:8px;
+cursor:pointer;
+display:block;
+margin:40px auto;
+}
+
+button:hover{
+background-color:#a94444;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- Floating Hearts -->
+
+<div class="heart">❤️</div>
+<div class="heart">❤️</div>
+<div class="heart">❤️</div>
+<div class="heart">❤️</div>
+<div class="heart">❤️</div>
+<div class="heart">❤️</div>
+<div class="heart">❤️</div>
+<div class="heart">❤️</div>
+<div class="heart">❤️</div>
+<div class="heart">❤️</div>
+<div class="heart">❤️</div>
+<div class="heart">❤️</div>
+<div class="heart">❤️</div>
+<div class="heart">❤️</div>
+<div class="heart">❤️</div>
+<div class="heart">❤️</div>
+<div class="heart">❤️</div>
+<div class="heart">❤️</div>
+<div class="heart">❤️</div>
+<div class="heart">❤️</div>
+
+<h1>Our Story ❤️</h1>
+
+<div class="timeline">
+
+<div class="container left">
+<div class="card">
+<img src="./first meet.jpeg">
+<div class="text">
+<div class="year">Jan-2020</div>
+<div class="desc"><i>Our first date. The day everything started☺️.</i></div>
+</div>
+</div>
+</div>
+
+<div class="container right">
+<div class="card">
+<img src="./frontpage1.jpeg">
+<div class="text">
+<div class="year">March-2020</div>
+<div class="desc"><i>Beautiful memories and countless smiles and happiness start.✨</i></div>
+</div>
+</div>
+</div>
+
+<div class="container left">
+<div class="card">
+<img src="photo3.jpg">
+<div class="text">
+<div class="year">2023</div>
+<div class="desc">Travelled together and created new stories.</div>
+</div>
+</div>
+</div>
+
+<div class="container right">
+<div class="card">
+<img src="photo4.jpg">
+<div class="text">
+<div class="year">2024</div>
+<div class="desc">More love, more happiness, more memories.</div>
+</div>
+</div>
+</div>
+
+<div class="container left">
+<div class="card">
+<img src="photo5.jpg">
+<div class="text">
+<div class="year">2025</div>
+<div class="desc">5 years of love ❤️ Happy Anniversary!</div>
+</div>
+</div>
+</div>
+
+
+</div>
+<button onclick="location.href='album.html'">
+Click Me
+</button>
+
+</body>
+</html>

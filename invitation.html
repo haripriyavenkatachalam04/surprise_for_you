@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>5th Wedding Anniversary</title>
+
+<style>
+
+body{
+    margin:0;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#d9d3cc;
+    font-family:Georgia, serif;
+
+    background-image: url("./photo.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.card{
+    width:500px;
+    background:#f4e3c1;
+    padding:80px 40px;
+    text-align:center;
+    box-shadow:0 10px 25px rgba(0,0,0,0.2);
+    position:relative;
+}
+
+.number{
+    font-size:70px;
+    color:#7a2f2f;
+    margin:0;
+}
+
+.number sup{
+    font-size:20px;
+}
+
+.wedding{
+    font-size:48px;
+    font-style:italic;
+    color:#7a2f2f;
+    margin:0;
+}
+
+.ann{
+    letter-spacing:5px;
+    color:#7a2f2f;
+}
+
+.congrats{
+    margin-top:25px;
+    font-size:14px;
+}
+
+.names{
+    font-size:34px;
+    color:#7a2f2f;
+    margin:10px 0;
+}
+
+.family{
+    letter-spacing:3px;
+    font-size:14px;
+}
+
+.text{
+    font-size:14px;
+    margin-top:25px;
+    color:#6b4a3a;
+}
+
+.line{
+    width:80%;
+    margin:25px auto;
+    border-top:1px solid #7a2f2f;
+}
+
+.days{
+    font-size:13px;
+    letter-spacing:2px;
+}
+
+button{
+    background-color:#7a2f2f;
+    color:white;
+    padding:12px 25px;
+    border:none;
+    font-size:16px;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+button:hover{
+    background-color:#a94444;
+}
+
+/* flower position */
+
+.flowers{
+    position:absolute;
+    left:0;
+    width:100%;
+}
+
+.top{
+    top:-60px;
+}
+
+.bottom{
+    bottom:-60px;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="card">
+
+<!-- Top Flowers -->
+
+<svg class="flowers top" height="120" viewBox="0 0 500 120">
+<circle cx="120" cy="60" r="25" fill="#ff6b6b"/>
+<circle cx="150" cy="40" r="20" fill="#ff9f43"/>
+<circle cx="180" cy="60" r="25" fill="#ff6b6b"/>
+<circle cx="210" cy="40" r="20" fill="#ffa6c9"/>
+<circle cx="240" cy="60" r="25" fill="#ff6b6b"/>
+
+<ellipse cx="140" cy="90" rx="10" ry="20" fill="#4caf50"/>
+<ellipse cx="200" cy="90" rx="10" ry="20" fill="#4caf50"/>
+</svg>
+
+<h1 class="number">6<sup>TH</sup></h1>
+<h2 class="wedding">Wedding</h2>
+<h3 class="ann">ANNIVERSARY</h3>
+
+<p class="congrats">❤️❤️❤️</p>
+
+<h2 class="names">SoundeshKumar & Soundharya</h2>
+
+<div class="date-box">
+<b>
+WEDNESDAY
+<div class="day">13</div>
+08:00 AM
+</b>
+</div>
+
+<p class="text">
+Meeting you was destiny, Loving you was my choice,<br>
+But having you in my life is the greatest blessing.
+I will love you forever.
+</p>
+
+<div class="line"></div>
+
+<p class="days">
+<b></b>2,191 DAYS TOGETHER AND COUNTING<b></b>
+</p>
+
+<!-- Bottom Flowers -->
+
+<svg class="flowers bottom" height="120" viewBox="0 0 500 120">
+<circle cx="120" cy="60" r="25" fill="#ff6b6b"/>
+<circle cx="150" cy="80" r="20" fill="#ff9f43"/>
+<circle cx="180" cy="60" r="25" fill="#ff6b6b"/>
+<circle cx="210" cy="80" r="20" fill="#ffa6c9"/>
+<circle cx="240" cy="60" r="25" fill="#ff6b6b"/>
+
+<ellipse cx="140" cy="30" rx="10" ry="20" fill="#4caf50"/>
+<ellipse cx="200" cy="30" rx="10" ry="20" fill="#4caf50"/>
+</svg>
+
+<button onclick="location.href='story.html'">
+Click Me
+</button>
+
+</div>
+
+</body>
+</html>
